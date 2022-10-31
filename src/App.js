@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import image from './shopping.webp'
+import man from './man.webp'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={image} width="250px" alt="shopping"/>
+      <h1>Grocery list</h1>
+      <img src={man} width="250px" alt="man"/>
     </div>
   );
 }
