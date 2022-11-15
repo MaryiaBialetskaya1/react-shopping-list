@@ -38,7 +38,6 @@ export class GroceryList extends Component {
           {this.state.grosetyList.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
-          <li></li>
         </ul>
       </div>
     );
