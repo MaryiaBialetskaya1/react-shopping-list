@@ -44,7 +44,10 @@ export class GroceryList extends Component {
           />
         </div>
         <div className="container">
-          <button onClick={() => this.addItem(this.state.userInput)}>
+          <button
+            onClick={() => this.addItem(this.state.userInput)}
+            className="btn-add btn"
+          >
             Add
           </button>
         </div>
@@ -57,7 +60,9 @@ export class GroceryList extends Component {
           ))}
         </ul>
         <div className="container">
-          <button onClick={() => this.deleteItem()}>Delete</button>
+          <button onClick={() => this.deleteItem()} className="btn-delete btn">
+            Delete
+          </button>
         </div>
       </div>
     );

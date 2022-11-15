@@ -22,10 +22,31 @@ li {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+
 h1 {
   font-family: "Montserrat", sans-serif;
 }
+
 .container {
   display: flex;
   justify-content: center;
+}
+
+.btn-add {
+  background: #65aa06;
+  margin-top: 5px;
+}
+
+.btn-delete {
+  background: #d30100;
+  margin-bottom: 5px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  width: 70%;
+  color: white;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
