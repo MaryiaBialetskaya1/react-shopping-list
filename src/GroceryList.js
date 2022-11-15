@@ -33,7 +33,7 @@ export class GroceryList extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="container">
           <input
             type="text"
             placeholder="What whould you like to buy?"
@@ -43,7 +43,7 @@ export class GroceryList extends Component {
             value={this.state.userInput}
           />
         </div>
-        <div>
+        <div className="container">
           <button onClick={() => this.addItem(this.state.userInput)}>
             Add
           </button>
@@ -56,7 +56,9 @@ export class GroceryList extends Component {
             </li>
           ))}
         </ul>
-        <button onClick={() => this.deleteItem()}>Delete</button>
+        <div className="container">
+          <button onClick={() => this.deleteItem()}>Delete</button>
+        </div>
       </div>
     );
   }
