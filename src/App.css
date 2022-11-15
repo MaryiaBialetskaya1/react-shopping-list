@@ -5,6 +5,12 @@
   margin: 20px auto;
   text-align: center;
 }
+
 body {
   background-color: #62c2c8;
+}
+
+.crossed {
+  text-decoration: line-through 2px red;
+  background-color: #f0f0f0;
 }
