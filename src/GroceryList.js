@@ -7,14 +7,14 @@ export class GroceryList extends Component{
     }
 
     onChangeEvent(e){
-        console.log(e.target.value);
+        this.setState({userInput: e})
     }
     render(){
         return(
             <div>
                 <input
                 type="text" placeholder="What whould you like to buy?"
-                onChange={this.onChangeEvent}
+                onChange={(e) =>{this.onChangeEvent(e.target.value)}}
                 value={this.state.userInput} />
             </div>
         )
