@@ -16,6 +16,10 @@ export class GroceryList extends Component {
     this.setState({ grosetyList: listArray, userInput: "" });
     //console.log(listArray);
   }
+  crossedWord(event) {
+    const li = event.target;
+    li.classList.toggle("crossed");
+  }
   render() {
     return (
       <div>
@@ -36,7 +40,9 @@ export class GroceryList extends Component {
         </div>
         <ul>
           {this.state.grosetyList.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li onClick={this.crossedWord} key={index}>
+              {item}
+            </li>
           ))}
         </ul>
       </div>
