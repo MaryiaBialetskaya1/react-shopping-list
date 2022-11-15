@@ -35,8 +35,8 @@ export class GroceryList extends Component {
           </button>
         </div>
         <ul>
-          {this.state.grosetyList.map((item) => (
-            <li>{item}</li>
+          {this.state.grosetyList.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
           <li></li>
         </ul>
