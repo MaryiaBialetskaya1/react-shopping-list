@@ -8,13 +8,13 @@ export class GroceryList extends Component {
 
   onChangeEvent(e) {
     this.setState({ userInput: e });
-    console.log(e);
+    //console.log(e);
   }
   addItem(input) {
     let listArray = this.state.grosetyList;
     listArray.push(input);
     this.setState({ grosetyList: listArray, userInput: "" });
-    console.log(listArray);
+    //console.log(listArray);
   }
   render() {
     return (
