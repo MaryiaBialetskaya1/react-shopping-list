@@ -12,7 +12,10 @@ export class GroceryList extends Component{
     render(){
         return(
             <div>
-                <input type="text" placeholder="What whould you like to buy?" onChange={this.onChangeEvent}/>
+                <input
+                type="text" placeholder="What whould you like to buy?"
+                onChange={this.onChangeEvent}
+                value={this.state.userInput} />
             </div>
         )
     }
