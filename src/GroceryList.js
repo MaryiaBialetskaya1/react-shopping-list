@@ -2,7 +2,8 @@ import { Component } from "react";
 
 export class GroceryList extends Component{
     state = {
-
+        userInput: "",
+        grosetyList: []
     }
 
     onChangeEvent(e){
