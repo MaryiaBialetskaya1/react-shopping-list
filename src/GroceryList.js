@@ -1,5 +1,5 @@
 import { Component } from "react";
-import check from "./check.gif";
+import check from "./check.png";
 
 export class GroceryList extends Component {
   state = {
@@ -42,6 +42,7 @@ export class GroceryList extends Component {
         <ul>
           {this.state.grosetyList.map((item, index) => (
             <li onClick={this.crossedWord} key={index}>
+              <img src={check} width="40px" alt="check mark" />
               {item}
             </li>
           ))}
