@@ -1,4 +1,5 @@
 import { Component } from "react";
+import check from "./check.gif";
 
 export class GroceryList extends Component {
   state = {
