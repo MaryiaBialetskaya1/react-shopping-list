@@ -34,6 +34,12 @@ export class GroceryList extends Component {
             Add
           </button>
         </div>
+        <ul>
+          {this.state.grosetyList.map((item) => (
+            <li>{item}</li>
+          ))}
+          <li></li>
+        </ul>
       </div>
     );
   }
