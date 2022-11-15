@@ -12,10 +12,14 @@ export class GroceryList extends Component {
     //console.log(e);
   }
   addItem(input) {
-    let listArray = this.state.grosetyList;
-    listArray.push(input);
-    this.setState({ grosetyList: listArray, userInput: "" });
-    //console.log(listArray);
+    if (input === "") {
+      alert("Enter an item. No empty strings.");
+    } else {
+      let listArray = this.state.grosetyList;
+      listArray.push(input);
+      this.setState({ grosetyList: listArray, userInput: "" });
+      //console.log(listArray);
+    }
   }
   crossedWord(event) {
     const li = event.target;
