@@ -21,6 +21,11 @@ export class GroceryList extends Component {
       //console.log(listArray);
     }
   }
+  deleteItem() {
+    let listArray = this.state.grosetyList;
+    listArray = [];
+    this.setState({ grosetyList: listArray });
+  }
   crossedWord(event) {
     const li = event.target;
     li.classList.toggle("crossed");
@@ -51,6 +56,7 @@ export class GroceryList extends Component {
             </li>
           ))}
         </ul>
+        <button onClick={() => this.deleteItem()}>Delete</button>
       </div>
     );
   }
